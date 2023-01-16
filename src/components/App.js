@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import '../styles/App.css';
+
 const App = () => {
   const[output, setOutput] = useState(0);
   const[value1, setValue1] = useState(0);
@@ -15,7 +16,7 @@ const App = () => {
        +
       <input id='input2' type="number" value={value2} onChange={(e) => setValue2(e.target.value)}/> 
       
-      <p id='result'></p>
+      <p id='result'>{output}</p>
     </div>
   )
 }
